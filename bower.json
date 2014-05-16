@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-bootstrap-requirejs-starterkit",
+  "version": "0.0.1",
+  "dependencies": {
+    "backbone": "latest",
+    "bootstrap": "latest",
+    "underscore": "latest",
+    "jquery": "latest",
+    "requirejs": "latest",
+    "text": "latest"
+  }
+}
