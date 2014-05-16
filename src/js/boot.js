@@ -11,7 +11,7 @@ requirejs.config({
 	shim: {
 		'Bootstrap' : ['jQuery'],
 		'Backbone': ['Underscore', 'jQuery', 'Bootstrap'],
-		'Spraper': ['Backbone']
+		'NodejsBootstrapRequirejsStarterkit': ['Backbone']
 	}
 });
 
