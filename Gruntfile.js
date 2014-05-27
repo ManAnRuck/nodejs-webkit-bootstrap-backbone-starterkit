@@ -88,11 +88,22 @@ module.exports = function(grunt) {
         }]
       }
     }
+    replace: {
+      requirejs: {
+        src: ['public/js/libs/require.js'],
+        overwrite: true,
+        replacements: [{
+          from: 'var requirejs, require, define;',
+          to: 'var requirejs, define;'
+        }]  
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-node-webkit-builder');
 
-  grunt.registerTask('default', ['jade', 'copy', 'nodewebkit']);
+  grunt.registerTask('default', ['jade', 'copy', 'replace', 'nodewebkit']);
 }
