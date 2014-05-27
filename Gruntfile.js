@@ -87,7 +87,7 @@ module.exports = function(grunt) {
           dest: 'public/'
         }]
       }
-    }
+    },
     replace: {
       requirejs: {
         src: ['public/js/libs/require.js'],
@@ -97,13 +97,20 @@ module.exports = function(grunt) {
           to: 'var requirejs, define;'
         }]  
       }
+    },
+    'npm-install': {
+      default: {
+        src: "src/"
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-text-replace');
+  grunt.loadNpmTasks('grunt-npm-install');
   grunt.loadNpmTasks('grunt-node-webkit-builder');
 
   grunt.registerTask('default', ['jade', 'copy', 'replace', 'nodewebkit']);
+  grunt.registerTask('test', ['npm-install']);
 }
