@@ -111,6 +111,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-npm-install');
   grunt.loadNpmTasks('grunt-node-webkit-builder');
 
-  grunt.registerTask('default', ['jade', 'copy', 'replace', 'nodewebkit']);
-  grunt.registerTask('test', ['npm-install']);
+  grunt.registerTask('default', ['npm-install', 'jade', 'copy', 'replace', 'nodewebkit']);
 }
