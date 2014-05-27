@@ -1,5 +1,7 @@
 bower_components
-node_modules
+/node_modules/*
+/src/node_modules/*
+!/src/node_modules/grunt-npm-install/*
 views/html
 public
 dist

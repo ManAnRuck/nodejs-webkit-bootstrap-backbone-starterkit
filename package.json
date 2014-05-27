@@ -7,7 +7,6 @@
 		"grunt-contrib-jade": "latest",
 		"grunt-node-webkit-builder" : "latest",
 		"grunt-text-replace": "latest",
-		"grunt-npm-install": "latest",
 		"require" : "latest"
 	}
 }
