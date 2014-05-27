@@ -5,8 +5,8 @@ git clone https://github.com/ReggaePanda/nodejs-webkit-bootstrap-backbone-starte
 cd nodejs-webkit-bootstrap-backbone-starterkit
 npm install -g grunt
 npm install -g bower
-npm install
 bower install
+npm install
 grunt
 ```
 

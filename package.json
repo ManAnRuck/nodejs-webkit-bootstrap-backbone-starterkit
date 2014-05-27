@@ -7,6 +7,7 @@
 		"grunt-contrib-jade": "latest",
 		"grunt-node-webkit-builder" : "latest",
 		"grunt-text-replace": "latest",
+		"grunt-npm-install": "git+https://git@github.com/ReggaePanda/grunt-npm-install",
 		"require" : "latest"
 	}
 }

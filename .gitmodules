@@ -1,3 +1,0 @@
-[submodule "node_modules/grunt-npm-install"]
-	path = node_modules/grunt-npm-install
-	url = https://github.com/ReggaePanda/grunt-npm-install

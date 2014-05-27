@@ -100,7 +100,7 @@ module.exports = function(grunt) {
     },
     'npm-install': {
       default: {
-        src: "src/"
+        src: ['node_modules/grunt-npm-install', 'src/']
       }
     }
   });
